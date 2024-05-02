@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Leaflet Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="invest.css"/>
+</head>
+<body>
+    <h1>
+        Disentagling the History of Disinvestment in Chicago, IL
+    </h1>
+    <h2>
+        Current Investsment (2010-2020); HOLC Redlining (1940); Urban Renewal (1950-1966); Stories from Resident and Activists (1940s-70s) 
+    </h2>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.marker.audio/leaflet.marker.audio.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <div id="map" class="mapelement">
+    </div>
+    <div class="sidebar">
+        <h2>Complicating the Story of Disinvestment</h2>
+        <p>As America reckons with its history of racial and economic segregation, a simple story has become popular; “neighborhoods were racially redlined, disinvested in, and that is way they struggle to this day.” There is, of course, a lot of truth to that statement, but the actual history is much more complicated. 
+            <br> 
+            For example, we often refer to redlining as a specific moment in time where the Homeowner Loan Corporation (HOLC) created redlining maps to provide risk guidance for the new Federal Housing Administration (FHA) loan program. In Chicago, this happened in 1940, but individual banks also practiced redlining before, during, and long after those maps were created as some of the stories embedded in this map will talk about. Many redlined neighborhoods also went through processes of Urban Renewal which were government projects that ‘invested’ in ‘blighted’ communities but also displaced the residents living there. Meanwhile while all these political and economic processes played out, residents took their own actions that shaped the course of their neighborhoods. 
+            </p>
+        <h2>How to Use this Map</h2>
+            <p>
+            This map aims to flesh out this history a little further with the limited data we have available to us. By clicking on the layer icon in the upper right corner of the map, you can turn on and off layers that show the current level of investment in neighborhoods (census tracts), neighborhoods that were redlined by HOLC in 1940, and urban renewal projects. The points on the map all represent stories from residents living through and often resisting the changes being made to their neighborhoods. This map does not aim to tell a specific story about disinvestment but rather allows you to explore and question how history played out between the limited data points on the map.
+            </p>
+        <h2>Useful Definitions</h2>
+        <p>“'<b>Blockbusting</b>' refers to the efforts of real-estate agents and real-estate speculators to trigger the turnover of white-owned property and homes to African Americans. Often characterized as “panic peddling,” such practices frequently accompanied the expansion of black areas of residence and the entry of African Americans into neighborhoods previously denied to them… Purchasing homes cheaply from nervous white occupants, the panic peddler sold dearly to African Americans who faced painfully limited choices and inflated prices in a discriminatory housing market.” (Hirsch, 2005)
+            <br>
+            “<b>Redlining</b>, illegal discriminatory practice in which a mortgage lender denies loans or an insurance provider restricts services to certain areas of a community, often because of the racial characteristics of the applicant’s neighbourhood.” (Encyclopaedia Britannica, 2024)
+            <br>
+            “<b>Urban renewal</b> subsidized local government-run programs designed to solve a variety of crises of postwar urban life: deindustrialization, overcrowding, and land values that were plummeting thanks to suburbanization and commercial and industrial outmigration. The program enabled cities to acquire and clear tens of thousands of acres of “blighted” land—an administrative term of art that, in practice, disproportionately targeted minority neighborhoods for redevelopment.” (Digital Scholarship Lab, n.d.)
+        </p>
+    </div>
+    <h3>Author: <i>Tyler Munn</i></h3>
+    <h3>Methods:</h3>
+    <p>
+        The quantitative data were visualized from a previous project. Not much was changed from the original sources except for choosing categories for the current investment data. “Redlined Census Tracts” were only those that received a D grade see (Meier et al., 2023) for more details on how redlining maps were transferred to census tracts. Qualitative data were added with the leaflet audio marker plugin. This allows for the addition of audio into a leaflet popup in the same way an image would be embedded. Audio were selected and chosen down to 20 sec quotes that represented. The selection criteria for audio were that they had to make reference to a specific place and/or neighborhood in Chicago as well as reference a resident’s perspective or action on dis/investment.
+    </p>
+    <h3>Sources:</h3>
+    <p>
+        Austin, H. M., & Thompson, K. (2022, December 16). Blockbusting – Digital Collections for the Classroom. https://dcc.newberry.org/?p=20838<br>
+        Cincotta, G. (1977, July 7). Gale Cincotta discusses community organizing for fair housing and loan practices [Interview]. Studs Terkel Radio Archive; The Chicago History Museum. https://studsterkel.wfmt.com/programs/gale-cincotta-discusses-community-organizing-fair-housing-and-loan-practices<br>
+        Digital Scholarship Lab, “Renewing Inequality,” American Panorama, ed. Robert K. Nelson and Edward L. Ayers, accessed August 20, 2021, https://dsl.richmond.edu/panorama/renewal/#view=0/0/1&viz=cartogram.<br>
+        Encyclopaedia Britannica. (2024, April 12). Redlining. https://www.britannica.com/topic/redlining
+        Hirsch, A. R. (2005). Blockbusting. In Encyclopedia of Chicago. Chicago History Museum and the Newberry Library. http://encyclopedia.chicagohistory.org/pages/147.html<br>
+        Meier, Helen C.S., and Mitchell, Bruce C. . Historic Redlining Indicator for 2010 and 2020 US Census Tracts: HRI2010 Shapefiles. Ann Arbor, MI: Inter-university Consortium for Political and Social Research [distributor], 2023-09-25. https://doi.org/10.3886/E141121V3-143302<br>
+        Robert K. Nelson, LaDale Winling, Richard Marciano, Nathan Connolly, et al., “Mapping Inequality,” American Panorama, ed. Robert K. Nelson and Edward L. Ayers, accessed December 7, 2023, https://dsl.richmond.edu/panorama/redlining/#loc=9/41.944/-88.448&city=chicago-il&text=downloads<br>
+        Peiffer, E., Marazzi, M., Theodos, B., Hangen, E., McDaniel, N., & Nunna, T. (n.d.). Exploring Capital Flows in Chicago. Retrieved December 7, 2023, from https://urbn.is/3VawW9o<br>
+        Williams, F.J. (2018). Frank Williams - Civil Rights Stories [Interview]. Oral History; Abraham Lincoln Presidential Library and Museum. https://presidentlincoln.illinois.gov/oral-history/collections/williams-frank-1/interview-detail/<br>
+        <a target="_blank" href="https://icons8.com/icon/7880/location">Map Pin</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+    </p>
+    <script src="invest.js"></script>
+</body>
+</html>
